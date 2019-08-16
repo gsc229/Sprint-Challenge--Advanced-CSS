@@ -509,6 +509,15 @@ footer {
 }
 .home .contact #contact-form button {
   border: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: crimson;
+  box-shadow: 0 9px #943232;
+}
+.home .contact #contact-form button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .home .contact #contact-form textarea {
   margin-bottom: 20px;
