@@ -238,7 +238,6 @@ footer {
 @media (max-width: 500px) {
   .home section {
     max-width: 100%;
-    margin-top: 20px;
   }
 }
 .home section .container {
@@ -309,6 +308,7 @@ footer {
 @media (max-width: 500px) {
   .home .visit-planets .container {
     width: 90%;
+    margin-top: 50px;
   }
 }
 .home .visit-planets h3 {
