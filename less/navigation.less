@@ -3,6 +3,9 @@
   @media @phone {
     width: 100%;
     left: 0%;
+    h1 {
+      color: gainsboro;
+    }
   }
   width: 53%;
   height: 13vh;
@@ -14,6 +17,7 @@
   text-align: center;
   h1 {
     font-size: 4rem;
+    color: gainsboro;
   }
   nav {
     @media @phone {
@@ -34,19 +38,24 @@
 .top-header {
   @media @phone {
     width: 100%;
+    height: 20vh;
+    margin-top: 125px;
   }
 
   margin: 0 auto;
-  height: 35vh;
+  height: 45vh;
   width: 53%;
 
-  .custom-flex(column, center, center);
+  .custom-flex(column, flex-start, center);
   img {
     @media @phone {
       height: 120px;
+      margin: 0;
+      position: relative;
+
+      z-index: -1;
     }
     border-radius: 2%;
     margin-top: 20vh;
-    margin-bottom: 5vh;
   }
 }
