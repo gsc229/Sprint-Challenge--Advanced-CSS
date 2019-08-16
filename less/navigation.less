@@ -1,38 +1,52 @@
 // Navigation code here
+.nav-container {
+  @media @phone {
+    width: 100%;
+    left: 0%;
+  }
+  width: 53%;
+  height: 13vh;
+  position: fixed;
+  left: 23%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+  }
+  nav {
+    @media @phone {
+      .custom-flex(row, space-between, center);
+      width: 90%;
+    }
+    width: 48%;
+    margin: 20px auto;
+
+    .custom-flex(row, space-around, center);
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: white;
+    }
+  }
+}
 .top-header {
   @media @phone {
     width: 100%;
   }
 
+  margin: 0 auto;
   height: 35vh;
   width: 53%;
-  margin: 0 auto;
+
   .custom-flex(column, center, center);
   img {
     @media @phone {
       height: 120px;
     }
     border-radius: 2%;
-  }
-  .nav-container {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    h1 {
-      font-size: 4rem;
-    }
-    nav {
-      @media @phone {
-        .custom-flex(row, space-between, center);
-        width: 90%;
-      }
-      width: 48%;
-      margin: 20px auto;
-      .custom-flex(row, space-around, center);
-      a {
-        text-decoration: none;
-        font-size: 1.8rem;
-      }
-    }
+    margin-top: 20vh;
+    margin-bottom: 5vh;
   }
 }
